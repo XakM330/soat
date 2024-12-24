@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, hsl(251,100%,50%), hsl(24,100%,50%)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.assosiy{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(254, 255, 254, 0.8);
+    border-radius: 50%;
+    border: 10px solid red;
+    position: relative;
+}
+
+.assosiy .raqam{
+    --rotation:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: xx-large;
+    transform: rotate(var(--rotation));
+}
+
+.assosiy .raqam1{
+    --rotation:30deg;
+}
+.assosiy .raqam2{
+    --rotation:60deg;
+}
+.assosiy .raqam3{
+    --rotation:90deg;
+}
+.assosiy .raqam4{
+    --rotation:120deg;
+}
+.assosiy .raqam5{
+    --rotation:150deg;
+}
+.assosiy .raqam6{
+    --rotation:180deg;
+}
+.assosiy .raqam7{
+    --rotation:210deg;
+}
+.assosiy .raqam8{
+    --rotation:240deg;
+}
+.assosiy .raqam9{
+    --rotation:270deg;
+}
+.assosiy .raqam10{
+    --rotation:300deg;
+}
+.assosiy .raqam11{
+    --rotation:330deg;
+}
+
+
+.assosiy .mil{
+    --rotation:0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 10px;
+    height: 148px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.assosiy::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.assosiy  .sekund{
+    width: 5px;
+    height: 45%;
+    background-color: rgb(228, 8, 8);
+    border: 1px solid white;
+}
+.assosiy  .daqiqa{
+    width: 8px;
+    height: 45%;
+    background-color: rgb(46, 14, 189);
+    border: 1px solid black;
+}
+.assosiy  .soat{
+    width: 12px;
+    height: 38%;
+    background-color: rgb(31, 15, 206);
+    border: 1px solid bisque;
+}
+
+
+
